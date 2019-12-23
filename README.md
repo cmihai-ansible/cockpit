@@ -3,6 +3,8 @@ Role Name
 
 cockpit
 
+[![Build Status](https://travis-ci.org/cmihai-ansible/cockpit.svg?branch=master)](https://travis-ci.org/cmihai-ansible/cockpit)
+
 Requirements
 ------------
 
