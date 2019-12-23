@@ -63,31 +63,26 @@ _cockpit_packages_install:
     - cockpit-system
     - cockpit-packagekit
     - cockpit-machines
-    - cockpit-kubernetes
   RedHat_7:
     - cockpit
     - cockpit-system
     - cockpit-packagekit
     - cockpit-machines
-    - cockpit-kubernetes
   CentOS_8:
     - cockpit
     - cockpit-system
     - cockpit-packagekit
     - cockpit-machines
-    - cockpit-kubernetes
   RedHat_8:
     - cockpit
     - cockpit-system
     - cockpit-packagekit
     - cockpit-machines
-    - cockpit-kubernetes
   Fedora_31:
     - cockpit
     - cockpit-system
     - cockpit-packagekit
     - cockpit-machines
-    - cockpit-kubernetes
 
 # Detected OS
 my_os: "{{ ansible_distribution }}_{{ ansible_distribution_major_version }}"
