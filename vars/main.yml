@@ -90,7 +90,7 @@ _cockpit_packages_install:
     - cockpit-kubernetes
 
 # Detected OS
-my_os: ansible_distribution + '_' + ansible_distribution_major_version
+my_os: "{{ ansible_distribution }}_{{ ansible_distribution_major_version }}"
 
 # Templates Copy
 cockpit_templates_copy: "{{ _cockpit_templates_copy['all']
