@@ -13,6 +13,13 @@ Requirements
 Role Variables
 --------------
 
+```
+cockpit_remove_packages: true
+cockpit_enable_service: true
+cockpit_firewall_configure: true
+cockpit_firewall_rules:
+  - service:
+```
 
 Dependencies
 ------------
@@ -22,20 +29,26 @@ Dependencies
 Example Playbook
 ----------------
 
-    - hosts: servers
-      roles:
-         - role: cockpit
+```yaml
+---
+- name: Install cockpit on localhost
+  hosts:
+    - localhost
+  connection: local
 
-    - name: set tuned state
+  tasks:
+    - name: cockpit is configured
       import_role:
-        name: cockpit
+        name: crivetimihai.cockpit
       vars:
         cockpit_remove_packages: true
         cockpit_enable_service: true
         cockpit_firewall_configure: true
         cockpit_firewall_rules:
-          - service: service_name
+          - service: http
+          - service: https
       tags: cockpit
+```
 
 License
 -------
