@@ -5,6 +5,15 @@ cockpit
 
 [![Build Status](https://travis-ci.org/cmihai-ansible/cockpit.svg?branch=master)](https://travis-ci.org/cmihai-ansible/cockpit)
 
+Ansible Galaxy:
+---------------
+
+[https://galaxy.ansible.com/crivetimihai/cockpit](https://galaxy.ansible.com/crivetimihai/cockpit)
+
+```bash
+ansible-galaxy install crivetimihai.cockpit
+```
+
 Requirements
 ------------
 
