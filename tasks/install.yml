@@ -1,22 +1,8 @@
 ---
 # Install cockpit packages
-
-- name: unwanted packages are removed
-  package:
-    name: "{{ cockpit_packages_remove }}"
-    state: absent
-  become: true
-  when: cockpit_remove_packages
-
 - name: prereq repositories are installed
   package:
     name: "{{ cockpit_packages_repos }}"
-    state: present
-  become: true
-
-- name: prereq packages are installed
-  package:
-    name: "{{ cockpit_packages_prereq }}"
     state: present
   become: true
 
