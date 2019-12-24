@@ -23,11 +23,10 @@ Role Variables
 --------------
 
 ```
-cockpit_remove_packages: true
 cockpit_enable_service: true
 cockpit_firewall_configure: true
 cockpit_firewall_rules:
-  - service:
+  - port: 3389
 ```
 
 Dependencies
