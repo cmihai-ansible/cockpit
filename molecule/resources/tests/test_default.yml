@@ -1,11 +1,12 @@
 # Molecule managed
 ---
-command:
-  help:
-    exit-status: 0
-    exec: "systemctl is-active cockpit"
-    stdout:
-      - "/active/"
-    stderr: []
-    timeout: 10000      # in milliseconds
-    skip: false
+package:
+  cockpit:
+    installed: true
+port:
+  tcp:9090:
+    listening: true
+service:
+  cockpit.service:
+    enabled: true
+    running: true
