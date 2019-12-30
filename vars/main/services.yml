@@ -3,12 +3,12 @@
 _cockpit_services_enable:
   all: []
   CentOS_7:
-    - cockpit.service
+    - cockpit.socket
   RedHat_7:
-    - cockpit.service
+    - cockpit.socket
   CentOS_8:
-    - cockpit.service
+    - cockpit.socket
   RedHat_8:
-    - cockpit.service
+    - cockpit.socket
   Fedora_31:
-    - cockpit.service
+    - cockpit.socket

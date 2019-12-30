@@ -3,10 +3,6 @@
 package:
   cockpit:
     installed: true
-port:
-  tcp:9090:
-    listening: true
-    ip: 0.0.0.0
 service:
   cockpit.socket:
     enabled: true

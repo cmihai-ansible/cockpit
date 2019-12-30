@@ -1,11 +1,5 @@
 ---
 # Install cockpit packages
-- name: prereq repositories are installed
-  package:
-    name: "{{ cockpit_packages_repos }}"
-    state: present
-  become: true
-
 - name: packages are installed
   package:
     name: "{{ cockpit_packages_install }}"
