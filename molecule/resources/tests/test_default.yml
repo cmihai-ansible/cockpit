@@ -7,6 +7,6 @@ port:
   tcp:9090:
     listening: true
 service:
-  cockpit.service:
+  cockpit.socket:
     enabled: true
     running: true
